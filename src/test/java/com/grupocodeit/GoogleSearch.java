@@ -42,6 +42,7 @@ public class GoogleSearch {
 
 	@Test
 	public void test() {
+		//realizar la busqueda
 		driver.findElement(By.name("q")).sendKeys("El Crumer");
 		driver.findElement(By.name("q")).submit();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
